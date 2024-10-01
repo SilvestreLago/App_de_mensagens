@@ -1,0 +1,115 @@
+/* TODA ESTILIZAÇÃO DESSE SITE FOI FEITO PELO CHATGPT*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5e5e5e;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+}
+
+.chat-container {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.message {
+    background-color: #e1ffc7;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    width: fit-content;
+    max-width: 80%;
+    position: relative; /* Para o timestamp funcionar corretamente */
+    display: inline-block;
+}
+
+.message.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.message.received {
+    background-color: #ffffff;
+    align-self: flex-start;
+}
+
+.message-time {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+    text-align: right; /* Posiciona o horário à direita */
+    display: block; /* Garante que fique abaixo da mensagem */
+}
+
+.input-container {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    background-color: #5e5e5e;
+    padding: 10px;
+}
+
+.input-container input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input-container button {
+    background-color: #570ccf;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #570ccf; /* optional */
+    display: flex;
+    align-items: center;
+  }
+  
+.navbar img {
+    margin-right: 10px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Cor de fundo */
+    border-top: 16px solid #570ccf; /* Cor do topo */
+    border-radius: 50%;
+    width: 50px; /* Largura do spinner */
+    height: 50px; /* Altura do spinner */
+    animation: spin 2s linear infinite; /* Animação de rotação */
+    position: fixed; /* Fixa o spinner na tela */
+    left: 50%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    margin: -25px 0 0 -25px; /* Ajusta a posição para centralizar */
+    z-index: 1000; /* Coloca o spinner acima de outros elementos */
+}
+
+/* Animação de rotação */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ocultar o loader quando não necessário */
+.hidden {
+    display: none;
+}
