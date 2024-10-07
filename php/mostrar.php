@@ -1,9 +1,11 @@
 <?php
+// MOSTRA AS MENSAGENS DO BANCO DE DADOS
+
 //CONECTA COM O BD
 include_once 'conn.php';
-
+session_start();
 //COLETA O NOME DO USER
-$nome = $_POST['nome'] ?? '';
+$nome = $_SESSION['nome'];
 
 //QUERY DO SQL
 $query = "SELECT * FROM Mensagens ORDER BY hora DESC";

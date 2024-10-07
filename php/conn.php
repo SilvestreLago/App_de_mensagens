@@ -1,4 +1,5 @@
 <?php 
+
 //ESTABELECER CONEXÃO COM O BANCO DE DADOS
 try{
     $caminho_DB = __DIR__ . '/' . '../db/mensagens.db';
