@@ -1,7 +1,7 @@
 <?php 
     session_start();
     if(isset($_SESSION['nome'])){
-        header('Location: ./index.php');
+        header('Location: ../index.php');
     }
     if(isset($_GET['erro'])){
         $erro = 'Nome inválido';

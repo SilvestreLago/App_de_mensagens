@@ -7,6 +7,7 @@ if(isset($_POST['msg'])){
     //INFORMAÇÕES NECESSÁRIAS
     $hora = date("Y-m-d H:i:s");
     $msg = htmlspecialchars(strip_tags($_POST['msg'])) ?? '';
+    $msg =  base64_encode($msg);
     $nome = $_SESSION['nome'];
 
     if($msg != '' and $nome != ''){

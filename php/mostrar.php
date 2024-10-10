@@ -14,16 +14,18 @@ $result = $db->query($query);
 //MOSTRAR EM LISTA AS MENSAGENS
 foreach($result as $row){
     if($row['user'] == $nome){ //CASO SEJA O MESMO USER
+        $msg_dec = base64_decode($row['msg']);
         echo"<div class='message sent'>
             <div class='message-time'>$row[user]</div>
-            $row[msg]
+            $msg_dec
             <div class='message-time'>$row[hora]</div>
         </div>
     ";
     }else{ //CASO SEJA UM USER DIFERENTE
+        $msg_dec2 = base64_decode($row['msg']);
         echo"<div class='message received'>
             <div class='message-time'>$row[user]</div>
-            $row[msg]
+            $msg_dec2
             <div class='message-time'>$row[hora]</div>
         </div>
     ";

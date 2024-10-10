@@ -25,7 +25,6 @@ include_once('./php/verf_login.php');
         <?php 
         include_once('./php/subir.php');
         ?>
-        
     </div>
 
     <form action="" method="post">
