@@ -1,6 +1,6 @@
 # Plataforma de mensagens com PHP, Javascript e SQL:
 
-## ## <a href="https://app-msg.rf.gd/nome.php" taget="_blank">Link de acesso</a>
+## <a href="https://app-msg.rf.gd/nome.php" taget="_blank">Link de acesso</a>
 
 Este repositório contém o código-fonte de um aplicativo de mensagens desenvolvido com o objetivo de aprimorar habilidades em desenvolvimento web e tecnologias front-end e back-end.
 
