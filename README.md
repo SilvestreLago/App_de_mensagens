@@ -15,7 +15,6 @@ Este repositório contém o código-fonte de um aplicativo de mensagens desenvol
 - Javascript;
 - SQLITE;
 - HTML/CSS;
-- Bootstrap;
 
 ## Arvore de diretório:
 ```
