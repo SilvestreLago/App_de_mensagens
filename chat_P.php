@@ -1,5 +1,6 @@
 <?php 
     include_once('./php/verf_login.php');
+    include_once('./php/verf_amizade.php');
     include_once('./php/conn.php');
     $id = $_GET['id'];
     $query = "SELECT Nome FROM User Where id = $id";
@@ -26,6 +27,7 @@
         <form action="./php/sair.php" method="POST" style="margin-left: auto; display: flex; align-items: center; margin-right:10px;">
             <a href="./index.php" style="background-color: blue; color: white; border: none; padding: 10px 15px; border-radius: 8px; font-size: 12px; text-decoration: none; margin-right: 10px;">CHAT PÚBLICO</a>    
             <a href="./users.php" style="background-color: blue; color: white; border: none; padding: 10px 15px; border-radius: 8px; font-size: 12px; text-decoration: none; margin-right: 10px;">CHAT PRIVADO</a>    
+            <a href="./amigos.php" style="background-color: blue; color: white; border: none; padding: 10px 15px; border-radius: 8px; font-size: 12px; text-decoration: none; margin-right: 10px;">AMIGOS</a>      
             <input type="submit" value="SAIR" name="sair" id='sair' style="background-color: #ff4d4d; color: white; border: none; padding: 10px 15px; border-radius: 8px; font-size: 12px;">
         </form>
     </nav>

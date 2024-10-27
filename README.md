@@ -7,6 +7,7 @@ Este repositório contém o código-fonte de um aplicativo de mensagens desenvol
 ## Funcionalidades:
 - Envio de mensagens privada;
 - Envio de mensagens públicas;
+- Sistema de amizade;
 
 ## Tecnologias utilizadas:
 
